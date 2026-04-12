@@ -1,16 +1,26 @@
-# React + Vite
+✈️ Travel Agency Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive travel agency website built with React, React Router, TailwindCSS, and DaisyUI.
 
-Currently, two official plugins are available:
+## Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** - Search bar with destination suggestions, Why Book With Us section, and Popular Destinations
+- **Destinations** - All destinations with clickable links
+- **Destination Detail** - Individual page for each destination
+- **About** - Information about the company
+- **Contact** - Contact form with validation
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- TailwindCSS
+- DaisyUI
+- Vite
 
-## Expanding the ESLint configuration
+## How to run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
