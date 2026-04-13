@@ -35,7 +35,7 @@ export default function SearchBar() {
   return (
     <>
       <h1 className=" title pt-10">Find Your Next Amazing Adventure</h1>
-      <div className="flex flex-col md:flex-row justify-center w-full gap-2">
+      <div className="flex flex-col md:flex-row w-full gap-2">
         <input
           type="text"
           name="origin"
@@ -44,7 +44,7 @@ export default function SearchBar() {
           required
         />
 
-        <div className="relative">
+        <div className="relative w-full">
           <input
             type="text"
             value={query}
@@ -69,7 +69,7 @@ export default function SearchBar() {
         </div>
 
         <input type="date" name="date" className="input-search" />
-        <input type="date" name="date" className="input-search" />
+        <input type="date" name="date" className="input-search " />
         <button onClick={handleSearch} className="btn btn-outline nav-style">
           Search
         </button>
