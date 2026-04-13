@@ -10,7 +10,7 @@
 }
 
 .input-search {
-  @apply input border-white rounded-2xl;
+  @apply input border-white rounded-2xl w-full;
 }
 
 .border-style {

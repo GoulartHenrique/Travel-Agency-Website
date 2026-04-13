@@ -1,8 +1,11 @@
 import { NavLink } from "react-router";
+import { useState } from "react";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="navbar bg-base-200 shadow-md">
+    <header className="navbar bg-base-200 shadow-md relative">
       <div className="flex-1">
         <NavLink className="nav-style text-2xl" to={"/"}>
           🛫 Travel Agency
@@ -10,36 +13,49 @@ export default function Header() {
       </div>
 
       <div className="flex-none md:hidden">
-        <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost">
-            ☰
-          </label>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu bg-base-200 rounded-box shadow p-2 w-40"
-          >
+        <button className="btn btn-ghost" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
+        {isOpen && (
+          <ul className="absolute right-0 top-16 z-10 bg-base-200 rounded-box shadow p-2 w-40">
             <li>
-              <NavLink className="nav-style" to={"/"}>
+              <NavLink
+                className="nav-style block"
+                to={"/"}
+                onClick={() => setIsOpen(false)}
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-style" to={"/about"}>
+              <NavLink
+                className="nav-style block"
+                to={"/about"}
+                onClick={() => setIsOpen(false)}
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-style" to={"/destinations"}>
+              <NavLink
+                className="nav-style block"
+                to={"/destinations"}
+                onClick={() => setIsOpen(false)}
+              >
                 Destinations
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-style" to={"/contact"}>
+              <NavLink
+                className="nav-style block"
+                to={"/contact"}
+                onClick={() => setIsOpen(false)}
+              >
                 Contact
               </NavLink>
             </li>
           </ul>
-        </div>
+        )}
       </div>
 
       <nav className="hidden md:flex flex-1 justify-end">
