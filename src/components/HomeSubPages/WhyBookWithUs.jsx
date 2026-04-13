@@ -2,7 +2,7 @@ export default function WhyBookWithUs() {
   return (
     <>
       <h2 className=" title">Why book with Us?</h2>
-      <div className="flex flex-col md:flex-row gap-4 px-4 ">
+      <div className="flex flex-col md:flex-row gap- px-2 ">
         <div className="card-style ">
           <div className="card-body items-center ">
             <h2 className="card-title">Curated Student Trips</h2>

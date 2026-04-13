@@ -5,7 +5,7 @@ export default function PopularDestinations() {
     <>
       <h2 className=" title">Popular Destinations</h2>
 
-      <div className="flex flex-col md:flex-row gap-4 px-4 ">
+      <div className="flex flex-col md:flex-row gap-4 px-2 ">
         {destinations
           .filter((d) => [1, 8, 12].includes(d.id))
           .map((destination) => (
