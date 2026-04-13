@@ -1,7 +1,7 @@
 export default function WhyTravelWithUs() {
   return (
     <>
-      <div className="flex items-center justify-center gap-50 pt-5 pb-7">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-50 pt-5 pb-7">
         <div className="text-left  p-5 ">
           <h2 className="title mb-4 text-center ">Why Travel with Us?</h2>
           <ul className="list-disc space-y-2 border-style p-4 pl-9 hover:bg-base-200">
