@@ -1,8 +1,10 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
+import { useTheme } from "../components/context/ThemeContext.jsx";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   return (
     <header className="navbar bg-base-200 shadow-md relative">
@@ -56,6 +58,9 @@ export default function Header() {
             </li>
           </ul>
         )}
+        <button onClick={toggleTheme} className="btn btn-ghost text-xl">
+          {isDark ? "☀️" : "🌙"}
+        </button>
       </div>
 
       <nav className="hidden md:flex flex-1 justify-end">
@@ -73,6 +78,9 @@ export default function Header() {
             Contact
           </NavLink>
         </ul>
+        <button onClick={toggleTheme} className="btn btn-ghost text-xl">
+          {isDark ? "☀️" : "🌙"}
+        </button>
       </nav>
     </header>
   );
