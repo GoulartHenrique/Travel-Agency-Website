@@ -1,3 +1,4 @@
+
 # ✈️ Travel Agency Website
 
 A responsive travel agency website built with React, React Router, TailwindCSS, and DaisyUI.
@@ -7,10 +8,10 @@ A responsive travel agency website built with React, React Router, TailwindCSS, 
 
 ## Screenshots
 
-<img width="1900" alt="Home" src="https://github.com/user-attachments/assets/41d6ff87-ca7d-48f7-95b0-8dbf0d739aab" />
-<img width="1900" alt="About" src="https://github.com/user-attachments/assets/187d630d-a5e3-486b-b0de-fe6c8297c613" />
-<img width="1900" alt="Destinations" src="https://github.com/user-attachments/assets/2efb6995-a562-4865-ac76-1a86a6844f2c" />
-<img width="1900" alt="Contact" src="https://github.com/user-attachments/assets/4ad3301d-5652-4f97-9ae1-b25069faa248" />
+<img width="1900" height="1192" alt="screencapture-localhost-5173-2026-04-14-13_28_05" src="https://github.com/user-attachments/assets/7df2b249-f39b-4516-ae9d-6a21b6ae4595" />
+<img width="1900" height="1256" alt="screencapture-localhost-5173-about-2026-04-14-13_28_21" src="https://github.com/user-attachments/assets/5d7e5269-12df-44cd-9e40-1ec4446e4d6a" />
+<img width="1900" height="1529" alt="screencapture-localhost-5173-destinations-2026-04-14-13_28_29" src="https://github.com/user-attachments/assets/3d4421f7-30fd-46be-a45a-85396c79e9b6" />
+<img width="1900" height="953" alt="screencapture-localhost-5173-contact-2026-04-14-13_28_42" src="https://github.com/user-attachments/assets/aa526978-8100-4e57-a9bc-c22bc486e85f" />
 
 ## Features
 
